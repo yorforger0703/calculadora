@@ -62,6 +62,11 @@ body {
     cursor: pointer;
 }
 
+.button:hover{
+    box-shadow: 0px 0px 15px #771515;
+    transform: scale(1.03);
+}
+
 .button.dark-gray {
     background-color: #333;
     color: #fff;
@@ -77,11 +82,19 @@ body {
     color: #000;
 }
 
-.button-wide {
+.button.igual{
+    background-color: #d3d3d3;
+    color: #000;
     grid-column: span 2;
     border-radius: 50px;
-    width: 12rem;
-    height: 3.75rem;
+    width: 9rem;
+    height: 4.5rem;
+    text-align: top;
+}
+
+.button.apagar {
+    background-color: #b41515;
+    color: #fff;
 }
 
 .footer {

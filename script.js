@@ -32,3 +32,11 @@ function clearDisplay() {
     currentInput = "";
     display.textContent = currentInput;
 }
+
+function backspace() {
+    currentInput = currentInput.slice(0, -1); 
+    display.textContent = currentInput;
+}
+
+let apagarButton = document.querySelector('.button.apagar');
+apagarButton.addEventListener('click', backspace);
