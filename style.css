@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000ea;
+    margin: 0;
+}
+
+
+.calculator {
+    background-color: #000;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 20rem;
+    margin: 2rem;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
+    min-height: 3.125rem;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.625rem;
+}
+
+.button {
+    border: none;
+    border-radius: 50%;
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.button.dark-gray {
+    background-color: #333;
+    color: #fff;
+}
+
+.button.red {
+    background-color: #b41515;
+    color: #fff;
+}
+
+.button.light-gray {
+    background-color: #d3d3d3;
+    color: #000;
+}
+
+.button-wide {
+    grid-column: span 2;
+    border-radius: 50px;
+    width: 12rem;
+    height: 3.75rem;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 2.5rem 0;
+    background-color: rgb(168, 35, 35);
+    margin-top: auto;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 0;
+    color: black;
+}
+
+footer .social a {
+    font-size: 25px;
+    color: black;
+    border: 2px solid black;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    transform: scale(1.2) translateY(-5px);
+    background: black;
+    color: rgb(168, 35, 35);
+}
+
+footer p {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 2rem 3%;
+    }
+
+    footer p {
+        margin-top: 1rem;
+    }
+
+    .calculator {
+        margin-left: 2.5rem;
+    }
+}
